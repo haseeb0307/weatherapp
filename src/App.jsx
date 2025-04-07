@@ -54,7 +54,6 @@ function App() {
           <h2>Weather App</h2>
           <input type="text" value={city} onChange={handleChange} placeholder='Enter City name ' />
           <br></br>
-
           <button onClick={getWeather}>Get Weather</button>
         <h2> {sys} </h2>
           {error && <p>{error}</p>}
