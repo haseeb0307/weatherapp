@@ -64,7 +64,6 @@ function App() {
           {coord?.lat && <p>latitude  : {coord?.lat} </p>}
           <p>{weather?.main}</p>
           {wind?.speed && <p>wind speed : {wind?.speed} m/s</p>}
-          
         </div>
       </div>
     </>
