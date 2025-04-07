@@ -7,7 +7,7 @@ function App() {
   const [temp, setTemp] = useState(null);
   const [error, setError] = useState('');
   const [wind, setwind] = useState('');
-  const [cityname, setcityname] = useState('');
+  const [cityname, setcityname] = useState('');      
   const [datetime, setDatetime] = useState('');
   const [coord, setcoord] = useState('')
   const [coord2, setcoord2] = useState('')
@@ -25,7 +25,7 @@ function App() {
       const res = await fetch(url);
       console.log({ res });
       const data = await res.json();
-      console.log({ data });
+      console.log({ data });     
       if (data.cod === 404) {
         setError('city not found');
         setWeather('null');
