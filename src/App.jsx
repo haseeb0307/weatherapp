@@ -38,7 +38,6 @@ function App() {
         const now = new Date();
         const formattedDateTime = now.toLocaleString();
         setDatetime(formattedDateTime);
-      
         setcoord(data.coord)
         setcoord2(data.coord)
         setsys(data.sys.country)
