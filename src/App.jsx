@@ -60,7 +60,7 @@ function App() {
 {city && <span className='closebtn'><button className='clear-btn' onClick={clearinput}>x</button></span>}
         </div>
         <br />
-        <button onClick={getWeather}>Get Weather</button>
+        <button className='weatherbutton' onClick={getWeather}>Get Weather</button>
         <h2>{sys}</h2>
         {error && <p>{error}</p>}
         {datetime && <p>{datetime}</p>}
