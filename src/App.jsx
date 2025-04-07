@@ -52,9 +52,9 @@ function App() {
       <div className='main-div'>
         <div className='form'>
           <h2>Weather App</h2>
-          <input type="text" value={city} onChange={handleChange} placeholder='Enter City name ' /><input type="text" X/>
+          <input type="text" value={city} onChange={handleChange} placeholder='Enter City name ' /><h2>X</h2>
 
-
+          
           <br></br>
           <button onClick={getWeather}>Get Weather</button>
         <h2> {sys} </h2>
