@@ -52,7 +52,7 @@ function App() {
       <div className='main-div'>
         <div className='form'>
           <h2>Weather App</h2>
-          <input type="text" value={city} onChange={handleChange} placeholder='Enter City name '/><button>x</button>
+          <input type="text" value={city} onChange={handleChange} placeholder='Enter City name ' x/>
 
           
           <br></br>
@@ -67,7 +67,7 @@ function App() {
           <p>{weather?.main}</p>
           {wind?.speed && <p>wind speed : {wind?.speed} m/s</p>}
         </div>
-      </div>
+      </div> 
     </>
   )
 }
