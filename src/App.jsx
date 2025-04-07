@@ -16,11 +16,10 @@ function App() {
 
   const handleChange = (e) => setCity(e.target.value);
 
-  // Function to clear input field
-  const clearInput = () => {
+  const clearinput = () => {
     setCity('');
-  };
 
+  }
   const getWeather = async () => {
     if (!city) return
 
@@ -57,12 +56,8 @@ function App() {
         <h2>Weather App</h2>
         <div className='input-container'>
           <input
-            type="text"
-            value={city}
-            onChange={handleChange}
-            placeholder='Enter City name'
-          />
-          {city && <span className="clear-btn" onClick={clearInput}>×</span>}
+            type="text" value={city} onChange={handleChange} placeholder='Enter City name'/>
+{city && <span><button onClick={clearinput}>x</button></span>}
         </div>
         <br />
         <button onClick={getWeather}>Get Weather</button>
