@@ -60,8 +60,8 @@ function App() {
           {datetime && <p>{datetime}</p>}
           <h2>{cityname}</h2>
           {temp && <p>{temp} °C</p>}
-          {coord2?.lon && <p>longitude  : {coord2?.lon} </p>}
-          {coord?.lat && <p>latitude  : {coord?.lat} </p>}
+          {/* {coord2?.lon && <p>longitude  : {coord2?.lon} </p>} */}
+          {/* {coord?.lat && <p>latitude  : {coord?.lat} </p>} */}
           <p>{weather?.main}</p>
           {wind?.speed && <p>wind speed : {wind?.speed} m/s</p>}
         </div>
