@@ -47,7 +47,6 @@ function App() {
       setError("failed to fetch data");
     }
   }
-
   return (
     <>
       <div className='main-div'>
