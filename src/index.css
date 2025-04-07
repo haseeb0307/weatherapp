@@ -95,12 +95,14 @@ input {
 
 .input-container {
   position: relative;
+  display: flex;
   /* width: 400px; */
 }
 
 input {
   /* width: ; */
   padding: 8px;
+
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -116,4 +118,10 @@ input {
 
 .clear-btn:hover {
   color: red;
+}
+
+.closebtn{
+  position: absolute;
+  right: 15px;
+  top: 25px;
 }
