@@ -107,9 +107,9 @@ input {
 
 .clear-btn {
   position: absolute;
- color: #242424;
+  color: #242424;
   right: 5px;
-  top: 20%;
+  top: 10%;
   font-size: 18px;
   cursor: pointer;
 }
