@@ -106,8 +106,8 @@ input[type="text"] {
 }
 
 .clear-btn {
-  /* position: absolute; */
-  float: right;
+  position: absolute;
+ 
   right: 10px;
   top: 40%;
   font-size: 18px;
