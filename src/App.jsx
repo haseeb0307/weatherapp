@@ -57,7 +57,7 @@ function App() {
         <div className='input-container'>
           <input
             type="text" value={city} onChange={handleChange} placeholder='Enter City name'/>
-{city && <span><button onClick={clearinput}>x</button></span>}
+{city && <span><button id='clear-btn' onClick={clearinput}>x</button></span>}
         </div>
         <br />
         <button onClick={getWeather}>Get Weather</button>
