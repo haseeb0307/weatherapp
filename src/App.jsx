@@ -62,7 +62,7 @@ function App() {
             onChange={handleChange}
             placeholder='Enter City name'
           />
-          {city && <span className="clear-btn" onClick={clearInput}>×</span>} {/* Cross button */}
+          {city && <span className="clear-btn" onClick={clearInput}>×</span>}
         </div>
         <br />
         <button onClick={getWeather}>Get Weather</button>
