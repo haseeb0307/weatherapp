@@ -95,11 +95,11 @@ input {
 
 .input-container {
   position: relative;
-  width: 400px;
+  /* width: 400px; */
 }
 
 input {
-  width: 100%;
+  /* width: ; */
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
