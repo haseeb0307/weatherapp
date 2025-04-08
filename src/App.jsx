@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { MdSunny } from "react-icons/md";
+
 import './App.css'
 
 function App() {
@@ -9,12 +11,14 @@ function App() {
   const [wind, setwind] = useState('');
   const [cityname, setcityname] = useState('');
   const [datetime, setDatetime] = useState('');
-  const [coord, setcoord] = useState('')
-  const [coord2, setcoord2] = useState('')
+  // const [coord, setcoord] = useState('')
+  // const [coord2, setcoord2] = useState('')
   const [sys, setsys] = useState('')
   const apiKey = 'https://67b5f2ba39d8c810d0a5c2eb--keen-crumble-846a16.netlify.app/';
 
   const handleChange = (e) => setCity(e.target.value);
+
+  
 
   const clearinput = () => {
     setCity('');
@@ -40,8 +44,8 @@ function App() {
         const now = new Date();
         const formattedDateTime = now.toLocaleString();
         setDatetime(formattedDateTime);
-        setcoord(data.coord)
-        setcoord2(data.coord)
+        // setcoord(data.coord)
+        // setcoord2(data.coord)
         setsys(data.sys.country)
       }
     }
@@ -56,8 +60,8 @@ function App() {
         <h2>Weather App</h2>
         <div className='input-container'>
           <input
-            type="text" value={city} onChange={handleChange} placeholder='Enter City name'/>
-{city && <span className='closebtn'><button className='clear-btn' onClick={clearinput}>x</button></span>}
+            type="text" value={city} onChange={handleChange} placeholder='Enter City name' />
+          {city && <span className='closebtn'><button className='clear-btn' onClick={clearinput}>x</button></span>}
         </div>
         <br />
         <button className='weatherbutton' onClick={getWeather}>Get Weather</button>
